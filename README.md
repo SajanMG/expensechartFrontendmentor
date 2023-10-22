@@ -1,6 +1,6 @@
 # ExpenseChart
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a Frontend Mentor | expense chart challenge built with Vue.
 
 ## Recommended IDE Setup
 
