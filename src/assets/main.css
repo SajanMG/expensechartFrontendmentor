@@ -1,0 +1,42 @@
+/* @import './base.css'; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background-color: var(--color-cream);
+}
+
+@media (min-width: 1441px) {
+  body {
+    display: flex;
+    place-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    place-items: center;
+    box-sizing: border-box;
+    margin: 2px auto;
+  }
+
+  #app {
+    max-width: 350px;
+  }
+}
+:root {
+  --color-soft-red: hsl(10, 79%, 65%);
+  --color-cyan: hsl(186, 34%, 60%);
+  --color-dark-brown: hsl(25, 47%, 15%);
+  --color-medium-brown: hsl(28, 10%, 53%);
+  --color-cream: hsl(27, 66%, 92%);
+  --color-very-pale-orange: hsl(33, 100%, 98%);
+}
