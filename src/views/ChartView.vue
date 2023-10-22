@@ -50,9 +50,8 @@ export default {
             today: this.getToday(new Date()),
         }
     },
-
     mounted() {
-        fetch('../../db/db.json')
+        fetch('https://github.com/SajanMG/expensechartFrontendmentor/blob/548ba245815b0cfcd0c305d1d87c4858408016a7/db/db.json')
             .then(response => response.json())
             .then(data => {
                 this.barData = data;
