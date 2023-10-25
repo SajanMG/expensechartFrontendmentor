@@ -51,7 +51,9 @@ export default {
         }
     },
     mounted() {
-        fetch('https://github.com/SajanMG/expensechartFrontendmentor/blob/548ba245815b0cfcd0c305d1d87c4858408016a7/db/db.json')
+        fetch('https://github.com/SajanMG/expensechartFrontendmentor/blob/548ba245815b0cfcd0c305d1d87c4858408016a7/db/db.json', {
+            mode: 'no-cors'
+        })
             .then(response => response.json())
             .then(data => {
                 this.barData = data;
