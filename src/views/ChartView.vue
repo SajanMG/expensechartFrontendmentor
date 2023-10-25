@@ -52,10 +52,15 @@ export default {
     },
     mounted() {
         fetch('http://localhost:3000/expenses')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => {
                 this.barData = data;
-                console.log(this.barData);
+                // console.log(this.barData);
             })
             .catch(error => {
                 console.log("Error", error);
