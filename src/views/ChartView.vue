@@ -51,7 +51,7 @@ export default {
         }
     },
     mounted() {
-        fetch('http://localhost:3000/expenses')
+        fetch('https://api.jsonserve.com/VzPtC5')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
